@@ -2,6 +2,7 @@
     
     <!-- content 
 			================================================== -->
+		
 		<div id="content">
 
 			<!-- carousel works section -->
@@ -59,6 +60,7 @@
 			<!-- end carousel works section -->
 
 		</div>
-		<!-- End content -->
+	
+	<!-- End content -->
     
 <?php get_footer(); ?>
