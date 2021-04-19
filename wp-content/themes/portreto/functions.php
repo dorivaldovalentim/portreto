@@ -66,12 +66,18 @@
               */
 
             wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', [], 1.0, 'all' );
+            wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/style.css', ['portreto_theme'], 1.0, 'all' );
+            wp_enqueue_style( 'portreto_theme', get_template_directory_uri() . '/assets/css/portreto-assets.min.css', [], 1.0, 'all' );
 
             /**
              * Scripts
              */
 
-            wp_enqueue_script( 'script', get_template_directory_uri() . '/script.js', [], 1.0, false );
+            wp_enqueue_script( 'portreto_theme', get_template_directory_uri() . '/assets/js/portreto-plugins.min.js', [], 1.0, true );
+            wp_enqueue_script( 'jquery_count', get_template_directory_uri() . '/assets/js/jquery.countTo.js', [], 1.0, true );
+            wp_enqueue_script( 'google_maps', 'http://maps.google.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI&amp;sensor=false&amp;language=en', [], 1.0, true );
+            wp_enqueue_script( 'jquery_count', get_template_directory_uri() . '/assets/js/gmap3.min.js', [], 1.0, true );
+            wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/script.js', ['portreto_theme'], 1.0, false );
         }
 
 
