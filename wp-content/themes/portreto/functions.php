@@ -57,7 +57,23 @@
 
             register_nav_menu( 'primary', __('Primary Menu', 'portreto') );
 
+            /** ********** ********** ********** ********** **********
+             *                  Adição de assets
+             ********** ********** ********** ********** ********** */
+
+             /**
+              * Stylesheets
+              */
+
+            wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', [], 1.0, 'all' );
+
+            /**
+             * Scripts
+             */
+
+            wp_enqueue_script( 'script', get_template_directory_uri() . '/script.js', [], 1.0, false );
         }
+
 
     }
 

@@ -1,1 +1,3 @@
-Hi i'm a footer <br />
+        <?php wp_footer(); ?>
+    </body>
+</html>
