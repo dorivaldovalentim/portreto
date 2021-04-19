@@ -35,7 +35,7 @@
              * based on the content of the post.
              */
 
-            add_theme_support( 'post-formats',  array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
+            add_theme_support( 'post-formats',  array ( 'aside', 'gallery', 'quote', 'image', 'video', 'pdf' ) );
 
             /** ********** ********** ********** ********** **********
              *                  Adição de menus
@@ -78,8 +78,23 @@
             wp_enqueue_script( 'google_maps', 'http://maps.google.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI&amp;sensor=false&amp;language=en', [], 1.0, true );
             wp_enqueue_script( 'jquery_count', get_template_directory_uri() . '/assets/js/gmap3.min.js', [], 1.0, true );
             wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/script.js', ['portreto_theme'], 1.0, false );
-        }
 
+
+            /**
+             * Adição de Post Types
+             */
+
+            register_post_type( 'carousel', [
+                'labels' => [
+                    'name'          => 'Carousel',
+                    'singular_name' => 'Carousel'
+                ],
+                'has_archive' => true,
+                'public' => true,
+                'menu_icon' => 'dashicons-slides',
+                'supports' => [ 'title', 'thumbnail', 'excerpt' ]
+             ] );
+        }
 
     }
 
