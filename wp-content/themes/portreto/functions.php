@@ -84,6 +84,7 @@
              * Adição de Post Types
              */
 
+            // Carousel
             register_post_type( 'carousel', [
                 'labels' => [
                     'name'          => 'Carousel',
@@ -93,7 +94,19 @@
                 'public' => true,
                 'menu_icon' => 'dashicons-slides',
                 'supports' => [ 'title', 'thumbnail', 'excerpt' ]
-             ] );
+            ] );
+
+            // Galleries
+            register_post_type( 'gallery', [
+                'labels' => [
+                    'name'          => 'Galerias',
+                    'singular_name' => 'Galeria'
+                ],
+                'has_archive' => false,
+                'public' => true,
+                'menu_icon' => 'dashicons-format-gallery',
+                'supports' => [ 'title', 'thumbnail', 'excerpt' ]
+            ] );
         }
 
     }
