@@ -68,6 +68,7 @@
             wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', [], 1.0, 'all' );
             wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/style.css', ['portreto_theme'], 1.0, 'all' );
             wp_enqueue_style( 'portreto_theme', get_template_directory_uri() . '/assets/css/portreto-assets.min.css', [], 1.0, 'all' );
+            wp_enqueue_style( 'custom', get_template_directory_uri() . '/assets/css/custom.css', [], 1.0, 'all' );
 
             /**
              * Scripts
