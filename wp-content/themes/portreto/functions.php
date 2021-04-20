@@ -113,4 +113,27 @@
 
     add_action( 'init', 'portreto_setup' );
 
+
+    /**
+     * Adicionando funções para filtrar o template de navegação entre posts
+     */
+    function wpdocs_add_post_link_prev( $html ){
+        $html = str_replace( '<a ', '<a class="prev-project" ', $html );
+     
+        return $html;
+    }
+    
+    function wpdocs_add_post_link_next( $html ){
+        $html = str_replace( '<a ', '<a class="next-project" ', $html );
+     
+        return $html;
+    }
+
+    /**
+     * Adicionando o filtro do template de navegação (linkando com as
+     * funções criadas anteriormente)
+     */
+    add_filter( 'previous_post_link', 'wpdocs_add_post_link_prev' );
+    add_filter( 'next_post_link', 'wpdocs_add_post_link_next' );
+
 ?>
