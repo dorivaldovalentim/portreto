@@ -86,11 +86,9 @@
 				<div class="container-fluid">
 					<div class="grid-images">
 						<div class="row">
-							<?php $count = 0; for($count = 1; $count <= 6; $count++): ?>
-								<div class="col-md-6">
-									<img src="<?= the_field('midia_' . $count) ?>" alt="">
-								</div>
-							<?php endfor; ?>
+							<div class="col-md-12">
+								<?= the_field('gallery'); ?>
+							</div>
 						</div>
 
 						<div class="pag-page">
