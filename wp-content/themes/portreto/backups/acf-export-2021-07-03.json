@@ -1,0 +1,155 @@
+[
+    {
+        "key": "group_607e003d22e6e",
+        "title": "Carousel",
+        "fields": [
+            {
+                "key": "field_607e005222275",
+                "label": "Botão",
+                "name": "button",
+                "type": "text",
+                "instructions": "Insira o texto do botão",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Ver mais",
+                "placeholder": "Botão",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "carousel"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_607ec49f01363",
+        "title": "Galerias",
+        "fields": [
+            {
+                "key": "field_607ec739548f2",
+                "label": "Autor",
+                "name": "author",
+                "type": "text",
+                "instructions": "Insira o nome do autor",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Anônimo",
+                "placeholder": "Autor",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_607f05af65368",
+                "label": "Galeria",
+                "name": "gallery",
+                "type": "wysiwyg",
+                "instructions": "Adicione as fotos ou vídeos da galeria",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "gallery"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_607edbe57d8a3",
+        "title": "Tipos de post",
+        "fields": [
+            {
+                "key": "field_607edbfa695d9",
+                "label": "Tipo",
+                "name": "type",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "normal": "Normal",
+                    "background": "Imagem de Fundo",
+                    "slide": "Carousel",
+                    "video": "Vídeo"
+                },
+                "default_value": false,
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 1,
+                "ajax": 1,
+                "return_format": "value",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]
